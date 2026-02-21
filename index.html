@@ -3,146 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>赵康 | Eason Zhao - 个人主页</title>
+    <title>Eason Zhao | 赵康 - Professional Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-gradient { background: radial-gradient(circle at 10% 20%, #1e1b4b 0%, #020617 100%); }
-        .text-gradient { background: linear-gradient(to right, #60a5fa, #c084fc, #fb7185); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-glow:hover { border-color: rgba(96, 165, 250, 0.5); box-shadow: 0 0 30px rgba(96, 165, 250, 0.15); transform: translateY(-5px); }
-        .nav-link:hover { color: #60a5fa; text-shadow: 0 0 8px rgba(96, 165, 250, 0.6); }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Outfit:wght@300;500;800&display=swap');
+        body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background-color: #ffffff; color: #1a1a1a; scroll-behavior: smooth; }
+        .section-title { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.2em; color: #64748b; text-transform: uppercase; margin-bottom: 2rem; }
+        .nav-item { position: relative; transition: color 0.3s; }
+        .nav-item::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: #2563eb; transition: width 0.3s; }
+        .nav-item:hover::after { width: 100%; }
+        .experience-card { border-left: 1px solid #e2e8f0; transition: all 0.4s; }
+        .experience-card:hover { border-left: 1px solid #2563eb; background-color: #f8fafc; }
+        .photo-frame { filter: grayscale(100%); transition: filter 0.5s ease; }
+        .photo-frame:hover { filter: grayscale(0%); }
     </style>
 </head>
-<body class="hero-gradient min-h-screen">
+<body class="antialiased text-lg">
 
-    <nav class="fixed w-full z-50 px-6 py-8">
-        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-3xl px-10 py-5">
-            <span class="text-3xl font-black tracking-tighter italic">EASON.<span class="text-blue-500">Z</span></span>
-            <div class="hidden md:flex space-x-12 text-sm font-bold uppercase tracking-[0.2em]">
-                <a href="#about" class="nav-link transition">关于</a>
-                <a href="#experience" class="nav-link transition">实战</a>
-                <a href="#honors" class="nav-link transition">荣誉</a>
-                <a href="#skills" class="nav-link transition">技能</a>
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-8 py-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-2xl font-extrabold tracking-tight">EASON <span class="text-blue-600">ZHAO</span></span>
+            <div class="hidden md:flex space-x-12 text-sm font-bold tracking-widest text-gray-500 uppercase">
+                <a href="#about" class="nav-item">Education</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#honors" class="nav-item">Honors</a>
+                <a href="#skills" class="nav-item">Skills</a>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="pt-52 pb-32 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
-            <div class="flex-1 text-center lg:text-left">
-                <div class="inline-flex items-center gap-3 px-6 py-2 glass rounded-full text-blue-400 font-bold mb-10">
-                    <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span></span>
-                    2026 届北航硕士 · 专业排名第一 [cite: 1, 12]
-                </div>
-                <h1 class="text-8xl lg:text-[10rem] font-black mb-10 tracking-tighter leading-none">
-                    我是 <span class="text-gradient">赵康</span>
+    <section id="about" class="pt-48 pb-32 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-end gap-20">
+            <div class="flex-1">
+                <h1 class="text-7xl md:text-9xl font-extrabold tracking-tighter mb-10 leading-none text-gray-900">
+                    Strategy & <br><span class="text-blue-600">Operations.</span>
                 </h1>
-                <p class="text-2xl lg:text-3xl text-slate-400 max-w-3xl leading-relaxed mb-16">
-                    深耕 <span class="text-white font-bold">行政管理与数字化运营</span>。擅长用 Python 自动化工具重塑管理效率，在京东、保时捷、安永拥有深度大厂实操背景。
+                <p class="text-2xl md:text-3xl text-gray-500 font-light leading-relaxed max-w-3xl mb-12">
+                    北京航空航天大学行政管理硕士。专注于数字化转型下的组织运营效率提升，拥有京东、保时捷、安永跨国企业实战背景。
                 </p>
-                <div class="flex flex-wrap justify-center lg:justify-start gap-8">
-                    <a href="mailto:zhaokang_buaa@163.com" class="bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-blue-500/30 transition-all">立即联系</a>
-                    <a href="简历.pdf" target="_blank" class="glass px-12 py-5 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">查看 PDF 简历</a>
+                <div class="flex items-center gap-12 text-sm font-bold text-gray-400">
+                    <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> BEIJING</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-university"></i> BUAA</span>
+                    <a href="mailto:zhaokang_buaa@163.com" class="text-blue-600 hover:underline underline-offset-8 transition-all italic">zhaokang_buaa@163.com</a>
                 </div>
             </div>
-            
-            <div class="relative w-80 h-80 lg:w-[450px] lg:h-[550px]">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-[3rem] rotate-6 opacity-20 blur-3xl"></div>
-                <div class="relative w-full h-full rounded-[3rem] border border-white/20 overflow-hidden glass card-glow transition-all duration-700">
-                    <img src="photo.jpg" alt="赵康" class="w-full h-full object-cover">
+            <div class="w-full md:w-[450px] aspect-[3/4] bg-gray-100 overflow-hidden relative photo-frame group">
+                <img src="photo.jpg" alt="赵康" class="w-full h-full object-cover">
+                <div class="absolute bottom-8 left-8 text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-sm font-bold tracking-widest uppercase">Eason Zhao</p>
+                    <p class="text-xs">Candidate for 2026 Master's Degree</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-32 px-6 bg-slate-900/30">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="glass p-12 rounded-[3rem] border-t-8 border-blue-500">
-                <h3 class="text-4xl font-black mb-6">北京航空航天大学 <span class="text-lg font-medium text-slate-500">(985 / 保研)</span> [cite: 7]</h3>
-                <p class="text-blue-400 text-2xl font-bold mb-6">行政管理 · 学硕 [cite: 8, 9]</p>
-                <p class="text-slate-300 text-xl italic leading-relaxed">“GPA 3.84/4.0 。主修组织行为学、定量研究方法与建模等 。”</p>
-            </div>
-            <div class="glass p-12 rounded-[3rem] border-t-8 border-purple-500">
-                <h3 class="text-4xl font-black mb-6">福州大学 <span class="text-lg font-medium text-slate-500">(211 / 双一流)</span> </h3>
-                <p class="text-purple-400 text-2xl font-bold mb-6">公共事业管理 · 本科 </p>
-                <p class="text-slate-300 text-xl italic leading-relaxed">“专业排名第 1 ，GPA 3.79/4.0 ，连续三年获校一等奖学金 。”</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-32 px-6">
+    <section class="py-32 px-8 bg-gray-50">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-6xl font-black mb-20 italic tracking-tighter">核心实战经历</h2>
+            <p class="section-title">Education Background</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">北京航空航天大学</h3>
+                    <p class="text-blue-600 font-bold text-xl mb-6">行政管理 · 硕士 (保研) | 2024 - 2026</p>
+                    <div class="space-y-3 text-gray-500">
+                        <p class="flex justify-between border-b pb-2"><span>GPA</span> <span>3.84 / 4.0</span></p>
+                        <p class="text-base leading-relaxed italic mt-4">主修：组织行为学、社会心理与公共管理、定量研究方法与建模。</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">福州大学</h3>
+                    <p class="text-blue-600 font-bold text-xl mb-6">公共事业管理 · 本科 | 2020 - 2024</p>
+                    <div class="space-y-3 text-gray-500">
+                        <p class="flex justify-between border-b pb-2"><span>专业排名</span> <span>Rank 1</span></p>
+                        <p class="text-base leading-relaxed italic mt-4">连续三年获校一等、二等奖学金，福建省优秀毕业生提名。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 px-8">
+        <div class="max-w-7xl mx-auto">
+            <p class="section-title">Professional Experience</p>
             
-            <div class="space-y-12">
-                <div class="glass p-16 rounded-[4rem] card-glow transition-all border-l-[16px] border-blue-600">
-                    <div class="flex flex-col lg:flex-row justify-between items-start mb-12 gap-6">
+            <div class="space-y-24">
+                <div class="experience-card pl-12">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-10">
                         <div>
-                            <h3 class="text-5xl font-black mb-4">京东集团 · 体验运营 [cite: 15, 16]</h3>
-                            <p class="text-blue-400 text-2xl font-bold tracking-widest uppercase">汽车事业部 | 2025.11 - 至今 [cite: 15]</p>
+                            <h3 class="text-4xl font-bold mb-3">京东集团 (JD.com)</h3>
+                            <p class="text-xl text-gray-400 font-medium">体验运营 | 汽车事业部 | 2025.11 - 至今</p>
                         </div>
-                        <div class="px-8 py-3 bg-blue-500/10 rounded-full text-blue-400 font-black text-xl">管理 100+ 人 BPO 团队 </div>
+                        <a href="resume.pdf" target="_blank" class="mt-4 md:mt-0 px-8 py-3 bg-gray-900 text-white text-xs font-black uppercase tracking-widest hover:bg-blue-600 transition">View Full PDF</a>
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-slate-300 text-xl leading-relaxed">
-                        <ul class="space-y-8">
-                            <li class="flex gap-5"><i class="fas fa-check-circle text-blue-500 mt-2"></i>从零搭建培训、考核、质检 SOP 体系，人均日绩效提升 <span class="text-white font-bold">20%</span> 。</li>
-                            <li class="flex gap-5"><i class="fas fa-check-circle text-blue-500 mt-2"></i>负责全国 <span class="text-white font-bold">3500+</span> 门店运营，重复违规占比降至 <span class="text-white font-bold">12.1%</span> 。</li>
-                        </ul>
-                        <ul class="space-y-8">
-                            <li class="flex gap-5"><i class="fas fa-code text-blue-400 mt-2"></i>运用 <span class="text-blue-400 font-black">Python</span> 编写自动化脚本，每周节省 <span class="text-white font-bold">6 个</span> 标准工时 。</li>
-                            <li class="flex gap-5"><i class="fas fa-check-circle text-blue-500 mt-2"></i>客服红线客诉漏判率下降 <span class="text-white font-bold">13%</span>，横向拉齐判罚标准 。</li>
-                        </ul>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="space-y-8 text-gray-600 text-lg leading-relaxed">
+                            <p>● <span class="text-gray-900 font-bold">BPO 体系构建：</span> 牵头百人规模质检团队，建立标准化培训与 SOP 体系，人均日绩效提升 20%，流失率锐减 50%。</p>
+                            <p>● <span class="text-gray-900 font-bold">PDCA 治理：</span> 覆盖全国 3500+ 线下门店，通过数据建模定位核心风险，使重复违规率大幅下降至 12.1%。</p>
+                        </div>
+                        <div class="space-y-8 text-gray-600 text-lg leading-relaxed">
+                            <p>● <span class="text-gray-900 font-bold">技术提效：</span> 独立开发 Python 自动化脚本，实现多战区报表自动分发，单周节省团队 6 个标准工时。</p>
+                            <p>● <span class="text-gray-900 font-bold">合规赋能：</span> 设计客服红线客诉案例库，成功使红线客诉漏判率降低 13%，拉齐全国判罚标准。</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div class="glass p-12 rounded-[3.5rem] card-glow transition-all">
-                        <h3 class="text-3xl font-black mb-4">保时捷 (上海) · PMO [cite: 17]</h3>
-                        <p class="text-purple-400 font-bold mb-8 text-xl">数字科技有限公司 | 2025.08 - 2025.10 [cite: 17]</p>
-                        <p class="text-slate-400 text-lg leading-relaxed mb-6">依托 Jira/Confluence 协助 <span class="text-white font-bold">30+</span> 项目追踪 [cite: 18]。独立设计半年期知识考核问卷，每周撰写行业研究专栏 [cite: 18]。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div class="experience-card pl-12">
+                        <h3 class="text-3xl font-bold mb-2">保时捷 (Porsche)</h3>
+                        <p class="text-gray-400 font-bold mb-8 uppercase text-sm">PMO Intern | 2025.08 - 2025.10</p>
+                        <p class="text-gray-600 leading-relaxed italic">负责 30+ 数字化项目追踪，主持跨部门知识共享全流程，独立撰写发布汽车行业政策研究专栏。</p>
                     </div>
-                    <div class="glass p-12 rounded-[3.5rem] card-glow transition-all">
-                        <h3 class="text-3xl font-black mb-4">安永 (四大) · 招聘/HRBP [cite: 19, 20]</h3>
-                        <p class="text-rose-400 font-bold mb-8 text-xl">会计师事务所 | 2025.06 - 2025.08 [cite: 19]</p>
-                        <p class="text-slate-400 text-lg leading-relaxed mb-6">累计安排笔面试 <span class="text-white font-bold">560+</span> 场，入职率达 <span class="text-white font-bold">65%</span> [cite: 19]。使用 Excel 进行全所员工在职意见深度数据分析 [cite: 19]。</p>
+                    <div class="experience-card pl-12">
+                        <h3 class="text-3xl font-bold mb-2">安永 (EY)</h3>
+                        <p class="text-gray-400 font-bold mb-8 uppercase text-sm">HR & Recruitment | 2025.06 - 2025.08</p>
+                        <p class="text-gray-600 leading-relaxed italic">管理招聘全流程，成功安排面试 560+ 场，通过 Excel 深度数据分析协助北京所员工关系维护。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="honors" class="py-32 px-6 glass">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
-                <div>
-                    <i class="fas fa-award text-6xl text-blue-500 mb-8"></i>
-                    <h4 class="text-2xl font-black mb-6">国家级荣誉 [cite: 23]</h4>
-                    <p class="text-slate-400 text-lg italic">第十三届“挑战杯”国家级铜奖 [cite: 24]。独立承担 20+ 次项目路演与答辩 [cite: 25]。</p>
+    <section id="honors" class="py-32 px-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div>
+                <p class="section-title">Honors</p>
+                <ul class="space-y-6">
+                    <li>
+                        <p class="text-xl font-bold">“挑战杯”国家级铜奖</p>
+                        <p class="text-sm text-gray-400 mt-1 uppercase tracking-wider text-sm">Core Member & Roadshow Lead</p>
+                    </li>
+                    <li>
+                        <p class="text-xl font-bold">北航一等奖学金</p>
+                        <p class="text-sm text-gray-400 mt-1 uppercase tracking-wider text-sm">Academic Merit (Top 5%)</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="skills">
+                <p class="section-title">Tech Stack</p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-5 py-2 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase">Python</span>
+                    <span class="px-5 py-2 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase">SQL</span>
+                    <span class="px-5 py-2 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase">Jira/Confluence</span>
+                    <span class="px-5 py-2 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase">SPSS</span>
+                    <span class="px-5 py-2 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase">Power BI</span>
                 </div>
-                <div id="skills">
-                    <i class="fas fa-terminal text-6xl text-purple-500 mb-8"></i>
-                    <h4 class="text-2xl font-black mb-6">硬核技能栈 </h4>
-                    <p class="text-slate-400 text-lg">Python (自动化/爬虫), SQL, Power BI, SPSS, Jira/Confluence, Excel (高级建模) 。</p>
-                </div>
-                <div>
-                    <i class="fas fa-users text-6xl text-rose-500 mb-8"></i>
-                    <h4 class="text-2xl font-black mb-6">组织影响力 [cite: 28, 29]</h4>
-                    <p class="text-slate-400 text-lg">北航研会干事 & 福大班长 [cite: 28]。统筹暑期游学项目总浏览量达 <span class="text-white font-bold">555w+</span> [cite: 22]。</p>
-                </div>
+            </div>
+            <div>
+                <p class="section-title">Soft Skills</p>
+                <ul class="space-y-6 text-gray-500">
+                    <li class="flex items-center gap-3"><i class="fas fa-check text-blue-600 text-xs"></i> 20+ 场商业路演答辩经验</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check text-blue-600 text-xs"></i> 555w+ 项目传播策划力</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check text-blue-600 text-xs"></i> 英语 CET-6 (485) 商务水平</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer class="py-32 text-center">
-        <div class="mb-12 flex justify-center gap-10 text-slate-500 font-bold tracking-widest text-sm">
-            <a href="mailto:zhaokang_buaa@163.com" class="hover:text-blue-400 transition">zhaokang_buaa@163.com [cite: 5]</a>
-            <span>13950100673 [cite: 5]</span>
+    <footer class="py-24 px-8 border-t border-gray-100 text-center">
+        <p class="text-xs font-black tracking-[1em] text-gray-300 uppercase mb-8">Persistence · Creativity · Resilience</p>
+        <div class="flex justify-center gap-12 text-sm font-bold text-gray-400">
+            <span>BEIHANG UNIVERSITY</span>
+            <span>© 2026 EASON ZHAO</span>
         </div>
-        <p class="text-slate-700 font-black tracking-[1em] mb-4 uppercase">向 阳 而 生 · 终 身 创 造</p>
-        <p class="text-slate-800 text-xs">© 2026 赵康 Eason Zhao | 北京航空航天大学 硕士在读 [cite: 7]</p>
     </footer>
 
 </body>
