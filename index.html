@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赵康 | Eason Zhao - 个人主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0a0a0a 100%); }
+        .accent-text { background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="hero-gradient min-h-screen">
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass rounded-full px-6 py-2">
+            <span class="text-xl font-bold tracking-tighter">EASON.<span class="text-blue-400">Z</span></span>
+            <div class="space-x-8 text-sm uppercase tracking-widest hidden md:flex">
+                <a href="#about" class="hover:text-blue-400 transition">关于</a>
+                <a href="#experience" class="hover:text-blue-400 transition">经历</a>
+                <a href="#skills" class="hover:text-blue-400 transition">技能</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-xs text-blue-400 mb-6 uppercase tracking-widest">
+                2026 届北航硕士 · 探索未来产业
+            </div>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">
+                我是 <span class="accent-text">赵康</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                北航行政管理硕士（专业第一）。擅长以 <span class="text-white">Python 自动化</span> 驱动组织效率，在 <span class="text-white">京东、安永、保时捷</span> 拥有深度实操经验。
+                我正在寻找能够共同定义未来的初创团队。
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="mailto:zhaokang_buaa@163.com" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition">联系我</a>
+                <button class="glass px-8 py-3 rounded-full font-medium hover:bg-white/5 transition">下载简历 (PDF)</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                <span class="h-px w-12 bg-blue-500"></span> 职业实战
+            </h2>
+            <div class="grid grid-cols-1 gap-8">
+                <div class="glass p-8 rounded-3xl hover:border-blue-500/30 transition group">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">京东集团 - 体验运营</h3>
+                            <p class="text-blue-400">汽车事业部 · 2025.11 - 至今</p>
+                        </div>
+                        <span class="text-gray-500 italic mt-2 md:mt-0">管理 100+ BPO 团队</span>
+                    </div>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• <strong class="text-white">自动化赋能：</strong> 利用 Python 编写自动化脚本，将全国门店质检报告拆分效率提升，每周节省 6 个标准工时。</li>
+                        <li>• <strong class="text-white">体系搭建：</strong> 从零构建培训/考核体系，使质检员月流失率降低 50%，重复违规门店占比下降 11%。</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl hover:border-purple-500/30 transition">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">保时捷 (上海) - PMO 实习</h3>
+                            <p class="text-purple-400">数字化科技 · 2025.08 - 2025.10</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• 依托 Jira & Confluence 追踪 30+ 项目落地，负责跨部门知识共享与行业研究专栏。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 bg-white/5">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <i class="fa-solid fa-code text-4xl text-blue-500 mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4">数字化工具</h4>
+                    <p class="text-gray-400">Python (自动化), SQL, SPSS, Power BI</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain text-4xl text-purple-500 mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4">管理方法论</h4>
+                    <p class="text-gray-400">PDCA 循环, SOP 流程设计, 组织行为学</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket text-4xl text-pink-500 mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4">综合软实力</h4>
+                    <p class="text-gray-400">国家级竞赛奖项, 20+ 场商业路演经验</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm border-t border-white/5">
+        <p>© 2026 赵康 (Eason Zhao) | 保持好奇，向阳而生</p>
+    </footer>
+
+</body>
+</html>
